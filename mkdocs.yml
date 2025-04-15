@@ -25,6 +25,9 @@ theme:
     - search.suggest 
     - header.autohide
 
+site_url: https://viktormuzyka.github.io/documentation/
+use_directory_urls: false
+
 plugins:
   - search
   - gen_nav:
