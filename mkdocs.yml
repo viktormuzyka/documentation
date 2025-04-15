@@ -1,0 +1,31 @@
+site_name: My Docs
+site_url: http://localhost:8000
+
+theme:
+  name: material
+  language: uk
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.highlight
+    - search.suggest 
+    - header.autohide
+
+plugins:
+  - search
+  - gen_nav:
+      enabled: true
