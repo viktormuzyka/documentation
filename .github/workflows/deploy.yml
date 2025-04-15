@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy with Docker
 
 on:
   push:
@@ -8,25 +8,22 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11'
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-live-edit-plugin mkdocs-gen-nav-plugin
+      - name: Build Docker image
+        run: docker build -t mkdocs-site .
 
-      - name: Build MkDocs site
-        run: mkdocs build
+      - name: Run mkdocs build inside container
+        run: docker run --rm -v "${{ github.workspace }}:/docs" mkdocs-site mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site 
+          publish_dir: ./site
