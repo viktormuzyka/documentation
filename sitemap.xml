@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://localhost:8000/content/Team%201/test1</loc>
+         <loc>https://viktormuzyka.github.io/documentation/content/Team%201/test1.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/content/Team%202/hard_test2</loc>
+         <loc>https://viktormuzyka.github.io/documentation/content/Team%202/hard_test2.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/content/Team%203/easy_test3</loc>
+         <loc>https://viktormuzyka.github.io/documentation/content/Team%203/easy_test3.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/main/getting-started</loc>
+         <loc>https://viktormuzyka.github.io/documentation/main/getting-started.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/reference/api</loc>
+         <loc>https://viktormuzyka.github.io/documentation/reference/api.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/usage/advanced</loc>
+         <loc>https://viktormuzyka.github.io/documentation/usage/advanced.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
     <url>
-         <loc>http://localhost:8000/usage/overview</loc>
+         <loc>https://viktormuzyka.github.io/documentation/usage/overview.html</loc>
          <lastmod>2025-04-15</lastmod>
     </url>
 </urlset>
